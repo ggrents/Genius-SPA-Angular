@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './shared/layout/layout.module';
 import { MainNavigationModule } from './pages/main-navigation/main-navigation.module';
-import { HeaderComponent } from './shared/layout/header/header.component';
 
 @NgModule({
   declarations: [AppComponent],

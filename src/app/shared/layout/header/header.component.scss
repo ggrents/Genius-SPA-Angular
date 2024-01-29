@@ -1,0 +1,23 @@
+.wrapper-head {
+  height: 56px;
+  margin: 0;
+  display: flex;
+  h2 {
+    color: black;
+    font-size: 35px;
+  }
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4f267;
+  padding-left: 1.5%;
+  padding-right: 3%;
+  button {
+    width: 10%;
+  }
+}
+
+.user-acts {
+  align-items: right;
+  display: flex;
+  gap: 15px;
+}
