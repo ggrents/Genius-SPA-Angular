@@ -1,1 +1,24 @@
-<p>footer works!</p>
+<div class="losung">
+  <h3>
+    Genius is the world’s biggest collection of song lyrics and musical
+    knowledge
+  </h3>
+  <div class="soc-logos">
+    <ng-container *ngFor="let social of icons">
+      <i class="fab {{ social.icon }} text-light icon-large"></i>
+    </ng-container>
+  </div>
+</div>
+
+<div class="lists">
+  <ul>
+    <li *ngFor="let unit of firstList">
+      <a href="">{{ unit }}</a>
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let unit of secondList">
+      <a href="">{{ unit }}</a>
+    </li>
+  </ul>
+</div>

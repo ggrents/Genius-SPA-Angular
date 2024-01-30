@@ -1,6 +1,11 @@
-<div class="nav">
-  <div class="eee" *ngFor="let item of items; let last = last">
-    <span class="brr">{{ item }}</span>
-    <span> | </span>
+<div class="menu">
+  <span *ngFor="let page of pages">
+    <a href="">{{ page }} </a>
+  </span>
+  <span class="separator"> | </span>
+  <div class="social-media">
+    <ng-container *ngFor="let social of socialNetworks">
+      <i class="fab {{ social.icon }} text-light icon-large"></i>
+    </ng-container>
   </div>
 </div>

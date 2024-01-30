@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  background-color: black;
+
+  .soc-logos {
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+  }
+
+  height: 350px;
+  .losung {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+    margin-left: 13%;
+    h3 {
+      color: white;
+      width: 400px;
+      font-size: 30px;
+    }
+  }
+  .lists {
+    margin-top: 7%;
+    margin-left: 13%;
+    display: flex;
+    gap: 35%;
+    ul {
+      width: 250px;
+    }
+    li {
+      color: white;
+      margin-bottom: 10%;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+.text-light {
+  color: #ffffff;
+}
+.icon-large {
+  font-size: 1.2em;
+}
