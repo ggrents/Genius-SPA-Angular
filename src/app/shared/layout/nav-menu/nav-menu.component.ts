@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './nav-menu.component.scss',
 })
 export class NavMenuComponent {
-  pages: string[] = ['THE 50TH', 'FEATURED', 'CHARTS', 'VIDEOS'];
+  pages: string[] = ['MUSICIANS', 'FEATURED', 'CHARTS', 'VIDEOS'];
   socialNetworks = [
     { name: 'Twitter', icon: 'fa-twitter' },
     { name: 'Facebook', icon: 'fa-facebook' },

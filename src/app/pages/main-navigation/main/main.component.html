@@ -1,1 +1,19 @@
-<p>main works!</p>
+<div class="wrapper">
+  <div class="main-news">
+    <div class="headings">
+      <h2>Some text</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
+        dignissimos, excepturi voluptatum et hic id.
+      </p>
+    </div>
+    <img src="assets/main-news.png" alt="" />
+  </div>
+
+  <div class="news-container">
+    <app-news-card
+      *ngFor="let newsItem of newsItems"
+      [data]="newsItem"
+    ></app-news-card>
+  </div>
+</div>

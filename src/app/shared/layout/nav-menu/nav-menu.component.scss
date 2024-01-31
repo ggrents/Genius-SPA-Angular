@@ -6,11 +6,13 @@
   justify-content: center;
   .menu {
     display: flex;
-    gap: 100px;
+    gap: 120px;
     font-size: 14px;
     a {
       text-decoration: none;
       color: white;
+      font-family: "Fira Sans", sans-serif;
+      font-weight: 500;
     }
   }
   .social-media {

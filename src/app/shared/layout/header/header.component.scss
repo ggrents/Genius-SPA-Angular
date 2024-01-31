@@ -1,13 +1,18 @@
-.wrapper-head {
+:host {
   height: 40px;
   margin: 0;
   display: flex;
   h2 {
     color: black;
     font-size: 25px;
+    font-family: "Rubik", sans-serif;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   h3 {
     font-size: 14px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
   }
   align-items: center;
   justify-content: space-between;
