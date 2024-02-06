@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { DatePipe } from './utils/date.pipe';
 
 @Component({
   selector: 'app-news-card',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './news-card.component.scss',
 })
 export class NewsCardComponent {
-  @Input() data: any;
+  @Input() article: any;
 }

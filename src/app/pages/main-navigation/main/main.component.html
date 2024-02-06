@@ -1,6 +1,6 @@
 <div class="wrapper">
-  <div class="main-news">
-    <div class="headings">
+  <div class="hottest-article">
+    <div class="hottest-article__title">
       <h2>Some text</h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
@@ -9,11 +9,12 @@
     </div>
     <img src="assets/main-news.png" alt="" />
   </div>
-
-  <div class="news-container">
-    <app-news-card
-      *ngFor="let newsItem of newsItems"
-      [data]="newsItem"
-    ></app-news-card>
+  <div class="wrapper-news">
+    <div class="news-container">
+      <app-news-card
+        *ngFor="let newsItem of latest_news"
+        [article]="newsItem"
+      ></app-news-card>
+    </div>
   </div>
 </div>

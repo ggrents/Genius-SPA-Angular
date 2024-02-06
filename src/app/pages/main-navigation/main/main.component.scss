@@ -1,12 +1,12 @@
 :host {
   display: flex;
   background-color: white;
-  height: 1150px;
-  .main-news {
+  height: 90vh;
+  .hottest-article {
     margin: 3% 10% 3%;
     display: flex;
     gap: 3%;
-    .headings {
+    .hottest-article__title {
       font-size: 34px;
       font-family: "Fira Sans", sans-serif;
     }
@@ -17,13 +17,26 @@
   }
 }
 
+.wrapper-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .news-container {
   display: flex;
-  justify-content: space-between;
-  gap: 5%;
+  justify-content: space-around;
+  gap: 2%;
+  margin: 0 20px 0 60px;
 }
 
 app-news-card {
-  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  padding-right: 5%;
+  border-right: 2px solid black;
   margin: 5px;
+  width: 23%;
+  height: 310px;
+}
+app-news-card:last-child {
+  border: none;
 }
