@@ -69,6 +69,7 @@
             "production": {
               "buildTarget": "genius-spa:build:production"
             },
+
             "development": {
               "buildTarget": "genius-spa:build:development"
             }

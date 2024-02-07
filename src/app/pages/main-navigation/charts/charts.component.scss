@@ -1,0 +1,20 @@
+.charts-header {
+  margin-top: 20px;
+  padding: 0 100px 0 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}

@@ -4,6 +4,7 @@ import { SearchComponent } from '../../features/search/search.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,6 @@ import { NavMenuComponent } from './nav-menu/nav-menu.component';
     NavMenuComponent,
     SearchComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 })
 export class LayoutModule {}

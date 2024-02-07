@@ -6,7 +6,25 @@ import { Component } from '@angular/core';
   styleUrl: './nav-menu.component.scss',
 })
 export class NavMenuComponent {
-  pages: string[] = ['MUSICIANS', 'FEATURED', 'CHARTS', 'VIDEOS'];
+  //pages: string[] = ['MUSICIANS', 'FEATURED', 'CHARTS', 'VIDEOS'];
+  pages: any[] = [
+    {
+      name: 'MUSICIANS',
+      link: '/musicians',
+    },
+    {
+      name: 'FEATURED',
+      link: '/featured',
+    },
+    {
+      name: 'CHARTS',
+      link: '/charts',
+    },
+    {
+      name: 'VIDEOS',
+      link: '/videos',
+    },
+  ];
   socialNetworks = [
     { name: 'Twitter', icon: 'fa-twitter' },
     { name: 'Facebook', icon: 'fa-facebook' },
