@@ -5,6 +5,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { RouterModule } from '@angular/router';
+import { InputTextModule } from 'primeng/inputtext';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,6 @@ import { RouterModule } from '@angular/router';
     NavMenuComponent,
     SearchComponent,
   ],
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, InputTextModule, FormsModule],
 })
 export class LayoutModule {}

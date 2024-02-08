@@ -7,5 +7,8 @@ import { DatePipe } from './utils/date.pipe';
   styleUrl: './news-card.component.scss',
 })
 export class NewsCardComponent {
+  condition:boolean = true;
   @Input() article: any;
+  a:string = 'dsl;da'
+
 }

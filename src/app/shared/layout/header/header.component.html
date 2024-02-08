@@ -1,4 +1,12 @@
-<input type="text" [attr.placeholder]="placeholder" />
+<span style="height: 20px" class="p-input-icon-right">
+  <i class="pi pi-search"></i>
+  <input
+    type="text"
+    pInputText
+    [(ngModel)]="searchedArtist"
+    class="bg-green-400"
+  />
+</span>
 <h2>GRENIUS</h2>
 <div class="user-acts">
   <h3>SIGN IN</h3>

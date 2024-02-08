@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   placeholder: string | undefined;
+  searchedArtist: string | undefined;
   constructor() {
     this.placeholder = 'Search for lyrics & more';
   }

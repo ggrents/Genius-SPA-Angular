@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="hottest-article">
     <div class="hottest-article__title">
-      <h2>Some text</h2>
+      <h2>Some text </h2>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
         dignissimos, excepturi voluptatum et hic id.
@@ -11,10 +11,14 @@
   </div>
   <div class="wrapper-news">
     <div class="news-container">
-      <app-news-card
+      <!-- <app-news-card
         *ngFor="let newsItem of latest_news"
         [article]="newsItem"
-      ></app-news-card>
+      ></app-news-card> -->
+    @for (newsItem of latest_news; track newsItem) {
+      <app-news-card [article]="newsItem"> </app-news-card>
+      
+    }
     </div>
   </div>
 </div>

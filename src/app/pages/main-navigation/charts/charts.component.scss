@@ -1,9 +1,21 @@
+.p-drowdown {
+  background-color: black;
+  display: none;
+}
+
+.table-charts {
+  margin: 50px 50px 50px 50px;
+}
+
 .charts-header {
   margin-top: 20px;
   padding: 0 100px 0 100px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 table {
   border-collapse: collapse;

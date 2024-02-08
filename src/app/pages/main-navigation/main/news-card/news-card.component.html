@@ -1,7 +1,7 @@
-<div class="news-card">
-  <h2>{{ article.title }}</h2>
+<div [ngClass]="'news-card'">
+  <h2>{{ article.title}}</h2>
   <div class="image-date">
-    <span class="muted">{{ article.date_created | datePipe }}</span>
+    <span muted>{{ article.date_created | datePipe }}</span>
     <img src="assets/{{ article.image_path }}" alt="" />
   </div>
 </div>
