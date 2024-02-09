@@ -1,12 +1,12 @@
-.p-drowdown {
-  background-color: black;
-  display: none;
-}
-
 .table-charts {
   margin: 50px 50px 50px 50px;
 }
 
+tr {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
 .charts-header {
   margin-top: 20px;
   padding: 0 100px 0 100px;
@@ -17,16 +17,39 @@
     font-size: 3.5rem;
   }
 }
-table {
-  border-collapse: collapse;
-  width: 100%;
+
+:host ::ng-deep {
+  .customSelect .p-dropdown-label {
+    border: 1px solid black;
+    border-radius: 0;
+  }
+  .p-dropdown-trigger {
+    border: 1px solid black;
+    border-radius: 0;
+  }
 }
-th,
-td {
-  text-align: left;
-  padding: 8px;
-  border-bottom: 1px solid #ddd;
+
+.wrapper-button {
+  display: flex;
+  justify-content: center;
 }
-th {
-  background-color: #f2f2f2;
+
+:host {
+  margin-bottom: 20px;
+  ::ng-deep {
+    button {
+      height: 40px;
+      border-radius: 0;
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+    button:hover {
+      border-radius: 0;
+      background-color: black;
+      color: white;
+      transition: none;
+      border: 1px solid black;
+    }
+  }
 }

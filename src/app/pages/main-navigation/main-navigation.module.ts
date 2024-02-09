@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
-
+import { ButtonModule } from 'primeng/button';
 @NgModule({
   declarations: [
     MainComponent,
@@ -19,6 +19,13 @@ import { TableModule } from 'primeng/table';
     NewsCardComponent,
     MutedDirective,
   ],
-  imports: [CommonModule, DatePipe, FormsModule, DropdownModule, TableModule],
+  imports: [
+    CommonModule,
+    DatePipe,
+    FormsModule,
+    DropdownModule,
+    TableModule,
+    ButtonModule,
+  ],
 })
 export class MainNavigationModule {}

@@ -30,7 +30,16 @@
   gap: 15px;
 }
 
-.p-input-icon-right > .p-inputtext {
+span i::before {
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+
+.p-inputtext {
   height: 30px;
-  width: 200px;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: black !important;
 }
