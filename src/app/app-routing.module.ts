@@ -7,6 +7,13 @@ const routes: Routes = [
   { path: '', component: MainComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'videos', component: ChartsComponent },
+  {
+    path: 'users',
+    loadChildren: () =>
+      import('./pages/user-management/user.module').then(
+        (m) => m.UserManagementModule
+      ),
+  },
 ];
 
 @NgModule({
