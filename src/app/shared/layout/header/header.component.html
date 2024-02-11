@@ -1,11 +1,12 @@
 <span class="p-input-icon-right">
-  <i class="pi pi-search"></i>
+  <i class="pi pi-search" (click)="navigateToSearchPage()"></i>
   <input
     id="srch"
     type="text"
     pInputText
     placeholder="Search for lyrics & more"
     [(ngModel)]="searchedArtist"
+    (keydown.enter)="navigateToSearchPage()"
   />
 </span>
 <a href=" "><h2>GRENIUS</h2> </a>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   placeholder: string | undefined;
   searchedArtist: string | undefined;
-  constructor() {
+  constructor(private router: Router) {
     this.placeholder = 'Search for lyrics & more';
+  }
+
+  navigateToSearchPage() {
+    this.router.navigate(['/search']);
   }
 }

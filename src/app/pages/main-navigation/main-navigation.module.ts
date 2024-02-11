@@ -11,6 +11,9 @@ import { DropdownModule } from 'primeng/dropdown';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableModule } from 'primeng/table';
 import { ButtonModule } from 'primeng/button';
+import { MusiciansComponent } from './musicians/musicians.component';
+import { MusiciansLettersComponent } from '../../features/musicians-letters/musicians.component';
+import { SearchComponent } from './search/search.component';
 @NgModule({
   declarations: [
     MainComponent,
@@ -18,6 +21,9 @@ import { ButtonModule } from 'primeng/button';
     VideosComponent,
     NewsCardComponent,
     MutedDirective,
+    MusiciansComponent,
+    MusiciansLettersComponent,
+    SearchComponent,
   ],
   imports: [
     CommonModule,

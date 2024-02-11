@@ -1,0 +1,15 @@
+.letters-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid white;
+  height: 2rem;
+  background-color: #080839;
+  a {
+    color: white;
+  }
+  a:hover {
+    cursor: pointer;
+    color: #e4f267;
+  }
+}
