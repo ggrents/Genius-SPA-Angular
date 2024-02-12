@@ -14,6 +14,10 @@ import { ButtonModule } from 'primeng/button';
 import { MusiciansComponent } from './musicians/musicians.component';
 import { MusiciansLettersComponent } from '../../features/musicians-letters/musicians.component';
 import { SearchComponent } from './search/search.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ArticleService } from './main/article.service';
+import { MusiciansService } from './musicians/musicians.service';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     MainComponent,
@@ -32,6 +36,9 @@ import { SearchComponent } from './search/search.component';
     DropdownModule,
     TableModule,
     ButtonModule,
+    HttpClientModule,
+    RouterModule,
   ],
+  providers: [ArticleService, MusiciansService],
 })
 export class MainNavigationModule {}

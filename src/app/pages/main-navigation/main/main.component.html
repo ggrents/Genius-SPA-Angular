@@ -1,21 +1,16 @@
 <div class="wrapper">
-  <div class="hottest-article">
+  <div *ngIf="hottest_article$ | async as article" class="hottest-article">
     <div class="hottest-article__title">
-      <h2>Some text</h2>
+      <h2>{{ article[0].title }}</h2>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil
-        dignissimos, excepturi voluptatum et hic id.
+        {{ article[0].content }}
       </p>
     </div>
-    <img src="assets/main-news.png" alt="" />
+    <img src="assets/{{ article[0].image_path }}" alt="" />
   </div>
   <div class="wrapper-news">
     <div class="news-container">
-      <!-- <app-news-card
-        *ngFor="let newsItem of latest_news"
-        [article]="newsItem"
-      ></app-news-card> -->
-      @for (newsItem of latest_news; track newsItem) {
+      @for (newsItem of (latest_news$ | async); track newsItem) {
       <app-news-card [article]="newsItem"> </app-news-card>
 
       }

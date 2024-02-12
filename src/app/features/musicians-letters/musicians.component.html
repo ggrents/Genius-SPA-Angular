@@ -1,5 +1,7 @@
 <div class="letters-wrapper">
   @for (letter of letters; track $index) {
-  <a href=""> {{ letter }}</a>
+  <a [routerLink]="['/musicians']" [queryParams]="{ startLetter: letter }">{{
+    letter
+  }}</a>
   }
 </div>

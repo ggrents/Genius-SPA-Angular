@@ -1,10 +1,31 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { MusiciansService } from './musicians.service';
+import { Observable } from 'rxjs';
+import { Musician } from './models/musician';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-musicians',
   templateUrl: './musicians.component.html',
-  styleUrl: './musicians.component.scss'
+  styleUrl: './musicians.component.scss',
 })
-export class MusiciansComponent {
+export class MusiciansComponent implements OnInit {
+  startLetter: string | null = null;
 
+  musicians$: Observable<Musician[]>;
+  constructor(
+    private _service: MusiciansService,
+    private route: ActivatedRoute
+  ) {}
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params) => {
+      this.startLetter = params['startLetter'];
+      if (!this.startLetter) {
+        this.musicians$ = this._service.getAllMusicians();
+      } else {
+        this.musicians$ = this._service.getAllMusicians().pipe(filter((item)=>));
+      }
+    });
+  }
 }

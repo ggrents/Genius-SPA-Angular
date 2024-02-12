@@ -1,0 +1,755 @@
+{
+  "news": [
+    {
+      "title": "Beyoncé Describes The Struggles Of Touring Life",
+      "content": "It is one of two new songs she surprise released during the Super Bowl",
+      "image_path": "beyonce.png",
+      "date_created": "2024-02-12T12:00:00.000Z"
+    },
+    {
+      "title": "Eminem's 27-year-old daughter is getting married",
+      "content": "The daughter of a famous rapper has become quite an adult — on Monday she announced her engagement to her boyfriend! The heiress of the star carefully hides her personal life, but still could not help but share her emotions.",
+      "image_path": "eminem.jpg",
+      "date_created": "2024-02-12T12:00:00.000Z"
+    },
+    {
+      "title": "Travis Scott slams props at Grammy Awards after losing Best Rap Album",
+      "content": "Travis Scott made headlines at the Grammy Awards by throwing props after losing the Best Rap Album category.",
+      "image_path": "cactus-jack.jpg",
+      "date_created": "2024-02-11T10:30:00.000Z"
+    },
+    {
+      "title": "Playboy rapper Carti has been arrested for assaulting his pregnant girlfriend",
+      "content": "The rapper known as Playboy Carti has been arrested for allegedly assaulting his pregnant girlfriend.",
+      "image_path": "Playboi-Carti.jpg",
+      "date_created": "2024-02-10T15:45:00.000Z"
+    },
+    {
+      "title": "21 Savage released the album 'American Dream'",
+      "content": "21 Savage surprises fans with the release of his new album 'American Dream', featuring collaborations with top artists.",
+      "image_path": "212121.jpg",
+      "date_created": "2024-02-09T08:00:00.000Z"
+    },
+    {
+      "title": "Kanye West announces 'Yeezus Returns' tour dates",
+      "content": "Kanye West announces a new tour, 'Yeezus Returns', to the excitement of fans worldwide.",
+      "image_path": "kanye-west.jpg",
+      "date_created": "2024-02-08T11:20:00.000Z"
+    },
+    {
+      "title": "Rihanna launches new fashion line 'Fenty Couture'",
+      "content": "Rihanna takes the fashion world by storm with the launch of her latest clothing line, 'Fenty Couture'.",
+      "image_path": "rihanna-fashion.jpg",
+      "date_created": "2024-02-07T14:15:00.000Z"
+    },
+    {
+      "title": "Drake announces collaboration album with Lil Wayne",
+      "content": "Drake confirms rumors of a collaboration album with Lil Wayne, promising fans a legendary project.",
+      "image_path": "drake-lil-wayne.jpg",
+      "date_created": "2024-02-06T09:00:00.000Z"
+    }
+  ],
+  "musicians": [
+    {
+      "id": 1,
+      "nickname": "Eminem",
+      "first_name": "Marshall",
+      "last_name": "Mathers",
+      "age": 48
+    },
+    {
+      "id": 2,
+      "nickname": "Jay-Z",
+      "first_name": "Shawn",
+      "last_name": "Carter",
+      "age": 52
+    },
+    {
+      "id": 3,
+      "nickname": "Kendrick Lamar",
+      "first_name": "Kendrick",
+      "last_name": "Lamar",
+      "age": 34
+    },
+    {
+      "id": 4,
+      "nickname": "Drake",
+      "first_name": "Aubrey",
+      "last_name": "Graham",
+      "age": 35
+    },
+    {
+      "id": 5,
+      "nickname": "Kanye West",
+      "first_name": "Kanye",
+      "last_name": "West",
+      "age": 44
+    },
+    {
+      "id": 6,
+      "nickname": "Tupac Shakur",
+      "first_name": "Tupac",
+      "last_name": "Shakur",
+      "age": null
+    },
+    {
+      "id": 7,
+      "nickname": "The Notorious B.I.G.",
+      "first_name": "Christopher",
+      "last_name": "Wallace",
+      "age": null
+    },
+    {
+      "id": 8,
+      "nickname": "Nas",
+      "first_name": "Nasir",
+      "last_name": "Jones",
+      "age": 48
+    },
+    {
+      "id": 9,
+      "nickname": "Lil Wayne",
+      "first_name": "Dwayne",
+      "last_name": "Carter",
+      "age": 39
+    },
+    {
+      "id": 10,
+      "nickname": "Snoop Dogg",
+      "first_name": "Calvin",
+      "last_name": "Broadus Jr.",
+      "age": 50
+    },
+    {
+      "id": 11,
+      "nickname": "Cardi B",
+      "first_name": "Belcalis",
+      "last_name": "Almanzar",
+      "age": 29
+    },
+    {
+      "id": 12,
+      "nickname": "Nicki Minaj",
+      "first_name": "Onika",
+      "last_name": "Maraj",
+      "age": 39
+    },
+    {
+      "id": 13,
+      "nickname": "Travis Scott",
+      "first_name": "Jacques",
+      "last_name": "Webster II",
+      "age": 30
+    },
+    {
+      "id": 14,
+      "nickname": "Post Malone",
+      "first_name": "Austin",
+      "last_name": "Post",
+      "age": 26
+    },
+    {
+      "id": 15,
+      "nickname": "Logic",
+      "first_name": "Sir",
+      "last_name": "Robert Bryson Hall II",
+      "age": 32
+    },
+    {
+      "id": 16,
+      "nickname": "Future",
+      "first_name": "Nayvadius",
+      "last_name": "Wilburn",
+      "age": 38
+    },
+    {
+      "id": 17,
+      "nickname": "John Lennon",
+      "first_name": "John",
+      "last_name": "Lennon",
+      "age": null
+    },
+    {
+      "id": 18,
+      "nickname": "Paul McCartney",
+      "first_name": "Paul",
+      "last_name": "McCartney",
+      "age": null
+    },
+    {
+      "id": 19,
+      "nickname": "George Harrison",
+      "first_name": "George",
+      "last_name": "Harrison",
+      "age": null
+    },
+    {
+      "id": 20,
+      "nickname": "Ringo Starr",
+      "first_name": "Ringo",
+      "last_name": "Starr",
+      "age": null
+    },
+
+    {
+      "id": 21,
+      "nickname": "Freddie Mercury",
+      "first_name": "Freddie",
+      "last_name": "Mercury",
+      "age": null
+    },
+    {
+      "id": 22,
+      "nickname": "Brian May",
+      "first_name": "Brian",
+      "last_name": "May",
+      "age": null
+    },
+    {
+      "id": 23,
+      "nickname": "John Deacon",
+      "first_name": "John",
+      "last_name": "Deacon",
+      "age": null
+    },
+    {
+      "id": 24,
+      "nickname": "Roger Taylor",
+      "first_name": "Roger",
+      "last_name": "Taylor",
+      "age": null
+    },
+    {
+      "id": 25,
+      "nickname": "Jimmy Hendrix",
+      "first_name": "Jimi",
+      "last_name": "Hendrix",
+      "age": null
+    },
+    {
+      "id": 26,
+      "nickname": "Elvis Presley",
+      "first_name": "Elvis",
+      "last_name": "Presley",
+      "age": null
+    },
+    {
+      "id": 27,
+      "nickname": "Bob Dylan",
+      "first_name": "Bob",
+      "last_name": "Dylan",
+      "age": null
+    },
+    {
+      "id": 28,
+      "nickname": "Michael Jackson",
+      "first_name": "Michael",
+      "last_name": "Jackson",
+      "age": null
+    },
+    {
+      "id": 29,
+      "nickname": "Prince",
+      "first_name": "Prince",
+      "last_name": "",
+      "age": null
+    },
+    {
+      "id": 30,
+      "nickname": "David Bowie",
+      "first_name": "David",
+      "last_name": "Bowie",
+      "age": null
+    },
+    {
+      "id": 31,
+      "nickname": "Madonna",
+      "first_name": "Madonna",
+      "last_name": "",
+      "age": null
+    },
+    {
+      "id": 32,
+      "nickname": "Whitney Houston",
+      "first_name": "Whitney",
+      "last_name": "Houston",
+      "age": null
+    },
+    {
+      "id": 33,
+      "nickname": "Janis Joplin",
+      "first_name": "Janis",
+      "last_name": "Joplin",
+      "age": null
+    },
+    {
+      "id": 34,
+      "nickname": "Jim Morrison",
+      "first_name": "Jim",
+      "last_name": "Morrison",
+      "age": null
+    },
+    {
+      "id": 35,
+      "nickname": "Beyoncé",
+      "first_name": "Beyoncé",
+      "last_name": "",
+      "age": null
+    },
+    {
+      "id": 36,
+      "nickname": "Rihanna",
+      "first_name": "Rihanna",
+      "last_name": "",
+      "age": null
+    },
+    {
+      "id": 37,
+      "nickname": "Aretha Franklin",
+      "first_name": "Aretha",
+      "last_name": "Franklin",
+      "age": null
+    },
+    {
+      "id": 38,
+      "nickname": "Stevie Wonder",
+      "first_name": "Stevie",
+      "last_name": "Wonder",
+      "age": null
+    },
+    {
+      "id": 39,
+      "nickname": "Tina Turner",
+      "first_name": "Tina",
+      "last_name": "Turner",
+      "age": null
+    },
+    {
+      "id": 40,
+      "nickname": "Chuck Berry",
+      "first_name": "Chuck",
+      "last_name": "Berry",
+      "age": null
+    },
+    {
+      "id": 41,
+      "nickname": "James Brown",
+      "first_name": "James",
+      "last_name": "Brown",
+      "age": null
+    },
+    {
+      "id": 42,
+      "nickname": "Etta James",
+      "first_name": "Etta",
+      "last_name": "James",
+      "age": null
+    },
+    {
+      "id": 43,
+      "nickname": "Frank Sinatra",
+      "first_name": "Frank",
+      "last_name": "Sinatra",
+      "age": null
+    },
+    {
+      "id": 44,
+      "nickname": "Nat King Cole",
+      "first_name": "Nat",
+      "last_name": "King Cole",
+      "age": null
+    },
+    {
+      "id": 45,
+      "nickname": "Ella Fitzgerald",
+      "first_name": "Ella",
+      "last_name": "Fitzgerald",
+      "age": null
+    },
+    {
+      "id": 46,
+      "nickname": "Billie Holiday",
+      "first_name": "Billie",
+      "last_name": "Holiday",
+      "age": null
+    },
+    {
+      "id": 47,
+      "nickname": "Miles Davis",
+      "first_name": "Miles",
+      "last_name": "Davis",
+      "age": null
+    },
+    {
+      "id": 48,
+      "nickname": "John Coltrane",
+      "first_name": "John",
+      "last_name": "Coltrane",
+      "age": null
+    },
+    {
+      "id": 49,
+      "nickname": "Duke Ellington",
+      "first_name": "Duke",
+      "last_name": "Ellington",
+      "age": null
+    },
+    {
+      "id": 50,
+      "nickname": "Louis Armstrong",
+      "first_name": "Louis",
+      "last_name": "Armstrong",
+      "age": null
+    },
+    {
+      "id": 51,
+      "nickname": "B.B. King",
+      "first_name": "B.B.",
+      "last_name": "King",
+      "age": null
+    },
+    {
+      "id": 52,
+      "nickname": "Eric Clapton",
+      "first_name": "Eric",
+      "last_name": "Clapton",
+      "age": null
+    },
+    {
+      "id": 53,
+      "nickname": "Jimi Hendrix",
+      "first_name": "Jimi",
+      "last_name": "Hendrix",
+      "age": null
+    },
+    {
+      "id": 54,
+      "nickname": "Jimmy Page",
+      "first_name": "Jimmy",
+      "last_name": "Page",
+      "age": null
+    },
+    {
+      "id": 55,
+      "nickname": "Slash",
+      "first_name": "Slash",
+      "last_name": "",
+      "age": null
+    },
+    {
+      "id": 56,
+      "nickname": "Eddie Van Halen",
+      "first_name": "Eddie",
+      "last_name": "Van Halen",
+      "age": null
+    },
+    {
+      "id": 57,
+      "nickname": "Keith Richards",
+      "first_name": "Keith",
+      "last_name": "Richards",
+      "age": null
+    },
+    {
+      "id": 58,
+      "nickname": "Carlos Santana",
+      "first_name": "Carlos",
+      "last_name": "Santana",
+      "age": null
+    },
+    {
+      "id": 59,
+      "nickname": "Bob Marley",
+      "first_name": "Bob",
+      "last_name": "Marley",
+      "age": null
+    },
+    {
+      "id": 60,
+      "nickname": "Peter Tosh",
+      "first_name": "Peter",
+      "last_name": "Tosh",
+      "age": null
+    },
+    {
+      "id": 61,
+      "nickname": "Jimi Hendrix",
+      "first_name": "Jimi",
+      "last_name": "Hendrix",
+      "age": null
+    },
+    {
+      "id": 62,
+      "nickname": "Johnny Cash",
+      "first_name": "Johnny",
+      "last_name": "Cash",
+      "age": null
+    },
+    {
+      "id": 63,
+      "nickname": "Buddy Holly",
+      "first_name": "Buddy",
+      "last_name": "Holly",
+      "age": null
+    },
+    {
+      "id": 64,
+      "nickname": "Ray Charles",
+      "first_name": "Ray",
+      "last_name": "Charles",
+      "age": null
+    },
+    {
+      "id": 65,
+      "nickname": "Bill Haley",
+      "first_name": "Bill",
+      "last_name": "Haley",
+      "age": null
+    },
+    {
+      "id": 66,
+      "nickname": "Jerry Lee Lewis",
+      "first_name": "Jerry",
+      "last_name": "Lee Lewis",
+      "age": null
+    },
+    {
+      "id": 67,
+      "nickname": "Fats Domino",
+      "first_name": "Fats",
+      "last_name": "Domino",
+      "age": null
+    },
+    {
+      "id": 68,
+      "nickname": "Little Richard",
+      "first_name": "Little",
+      "last_name": "Richard",
+      "age": null
+    },
+    {
+      "id": 69,
+      "nickname": "Bo Diddley",
+      "first_name": "Bo",
+      "last_name": "Diddley",
+      "age": null
+    },
+    {
+      "id": 70,
+      "nickname": "Elvis Presley",
+      "first_name": "Elvis",
+      "last_name": "Presley",
+      "age": null
+    },
+    {
+      "id": 71,
+      "nickname": "John Lennon",
+      "first_name": "John",
+      "last_name": "Lennon",
+      "age": null
+    },
+    {
+      "id": 72,
+      "nickname": "Paul McCartney",
+      "first_name": "Paul",
+      "last_name": "McCartney",
+      "age": null
+    },
+    {
+      "id": 73,
+      "nickname": "George Harrison",
+      "first_name": "George",
+      "last_name": "Harrison",
+      "age": null
+    },
+    {
+      "id": 74,
+      "nickname": "Ringo Starr",
+      "first_name": "Ringo",
+      "last_name": "Starr",
+      "age": null
+    },
+    {
+      "id": 75,
+      "nickname": "Elton John",
+      "first_name": "Elton",
+      "last_name": "John",
+      "age": null
+    },
+    {
+      "id": 76,
+      "nickname": "Mick Jagger",
+      "first_name": "Mick",
+      "last_name": "Jagger",
+      "age": null
+    },
+    {
+      "id": 77,
+      "nickname": "Keith Richards",
+      "first_name": "Keith",
+      "last_name": "Richards",
+      "age": null
+    },
+    {
+      "id": 78,
+      "nickname": "Charlie Watts",
+      "first_name": "Charlie",
+      "last_name": "Watts",
+      "age": null
+    },
+    {
+      "id": 79,
+      "nickname": "Ronnie Wood",
+      "first_name": "Ronnie",
+      "last_name": "Wood",
+      "age": null
+    },
+    {
+      "id": 80,
+      "nickname": "David Gilmour",
+      "first_name": "David",
+      "last_name": "Gilmour",
+      "age": null
+    },
+    {
+      "id": 81,
+      "nickname": "Roger Waters",
+      "first_name": "Roger",
+      "last_name": "Waters",
+      "age": null
+    },
+    {
+      "id": 82,
+      "nickname": "Nick Mason",
+      "first_name": "Nick",
+      "last_name": "Mason",
+      "age": null
+    },
+    {
+      "id": 83,
+      "nickname": "Syd Barrett",
+      "first_name": "Syd",
+      "last_name": "Barrett",
+      "age": null
+    },
+    {
+      "id": 84,
+      "nickname": "Bob Dylan",
+      "first_name": "Bob",
+      "last_name": "Dylan",
+      "age": null
+    },
+    {
+      "id": 85,
+      "nickname": "Neil Young",
+      "first_name": "Neil",
+      "last_name": "Young",
+      "age": null
+    },
+    {
+      "id": 86,
+      "nickname": "Tom Petty",
+      "first_name": "Tom",
+      "last_name": "Petty",
+      "age": null
+    },
+    {
+      "id": 87,
+      "nickname": "Bruce Springsteen",
+      "first_name": "Bruce",
+      "last_name": "Springsteen",
+      "age": null
+    },
+    {
+      "id": 88,
+      "nickname": "Paul Simon",
+      "first_name": "Paul",
+      "last_name": "Simon",
+      "age": null
+    },
+    {
+      "id": 89,
+      "nickname": "Art Garfunkel",
+      "first_name": "Art",
+      "last_name": "Garfunkel",
+      "age": null
+    },
+    {
+      "id": 90,
+      "nickname": "Elvis Costello",
+      "first_name": "Elvis",
+      "last_name": "Costello",
+      "age": null
+    },
+    {
+      "id": 91,
+      "nickname": "Stevie Nicks",
+      "first_name": "Stevie",
+      "last_name": "Nicks",
+      "age": null
+    },
+    {
+      "id": 92,
+      "nickname": "Lindsey Buckingham",
+      "first_name": "Lindsey",
+      "last_name": "Buckingham",
+      "age": null
+    },
+    {
+      "id": 93,
+      "nickname": "Christine McVie",
+      "first_name": "Christine",
+      "last_name": "McVie",
+      "age": null
+    },
+    {
+      "id": 94,
+      "nickname": "John McVie",
+      "first_name": "John",
+      "last_name": "McVie",
+      "age": null
+    },
+    {
+      "id": 95,
+      "nickname": "Mick Fleetwood",
+      "first_name": "Mick",
+      "last_name": "Fleetwood",
+      "age": null
+    },
+    {
+      "id": 96,
+      "nickname": "Roger Taylor",
+      "first_name": "Roger",
+      "last_name": "Taylor",
+      "age": null
+    },
+    {
+      "id": 97,
+      "nickname": "Brian May",
+      "first_name": "Brian",
+      "last_name": "May",
+      "age": null
+    },
+    {
+      "id": 98,
+      "nickname": "John Deacon",
+      "first_name": "John",
+      "last_name": "Deacon",
+      "age": null
+    },
+    {
+      "id": 99,
+      "nickname": "Freddie Mercury",
+      "first_name": "Freddie",
+      "last_name": "Mercury",
+      "age": null
+    },
+    {
+      "id": 100,
+      "nickname": "Roger Waters",
+      "first_name": "Roger",
+      "last_name": "Waters",
+      "age": null
+    }
+  ]
+}

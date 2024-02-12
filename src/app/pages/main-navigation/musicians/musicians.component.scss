@@ -1,10 +1,21 @@
+:host {
+  background-color: black;
+  border: 1px solid white;
+}
 .musicians-grid {
   margin: 10px 20px 10px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   .musicians-column {
+    th {
+      color: white;
+    }
+    background-color: black;
+    color: #5ba7c2;
+    display: flex;
+    justify-content: space-evenly;
     border: 1px solid black;
-    height: 200px;
+    height: auto;
   }
 }

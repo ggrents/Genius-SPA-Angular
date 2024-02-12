@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
   standalone: true,
 })
 export class DatePipe implements PipeTransform {
-  transform(_date: Date): string {
+  transform(dateString: string): string {
+    const date = new Date(dateString);
     const monthAbbreviations = [
       'Jan',
       'Feb',
@@ -20,9 +21,10 @@ export class DatePipe implements PipeTransform {
       'Nov',
       'Dec',
     ];
-    const month = monthAbbreviations[_date.getMonth()];
-    const year = _date.getFullYear().toString().slice(-2);
-    const day = _date.getDate().toString().padStart(2, '0');
+
+    const day = date.getDate().toString().padStart(2, '0');
+    const month = monthAbbreviations[date.getMonth()];
+    const year = date.getFullYear().toString().slice(-2);
 
     return `${month} ${day} ${year}`;
   }
