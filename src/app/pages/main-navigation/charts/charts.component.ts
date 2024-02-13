@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Genre } from './models/genre';
+import { TrackService } from './service/track.service';
+import { Observable } from 'rxjs';
+import { Track } from './models/track';
 
 @Component({
   selector: 'app-charts',
@@ -7,79 +10,50 @@ import { Genre } from './models/genre';
   styleUrl: './charts.component.scss',
 })
 export class ChartsComponent implements OnInit {
-  genres: Genre[];
-  tracks: any[];
+  loadMoreDisabled: boolean = false;
+  genres$: Observable<Genre[]>;
+  tracks$: Observable<Track[]>;
+  tracks: Track[] = [];
+  tracksDisplayed: Track[] = [];
   selectedGenre: Genre;
 
+  constructor(private _service: TrackService) {}
   ngOnInit(): void {
-    this.genres = [
-      {
-        id: 1,
-        name: 'Rap',
-      },
-      {
-        id: 2,
-        name: 'Pop',
-      },
-      {
-        id: 3,
-        name: 'Rock',
-      },
-      {
-        id: 4,
-        name: 'R&B',
-      },
-    ];
+    this.genres$ = this._service.getGenres();
 
-    this.tracks = [
-      {
-        id: 1,
-        title: 'Fast Car',
-        artist: 'Tracy Chapman',
-        plays: '1.6M',
-      },
-      {
-        id: 2,
-        title: 'HISS',
-        artist: 'Megan Thee Stallion',
-        plays: '1.5M',
-      },
-      {
-        id: 3,
-        title: 'Lose Yourself',
-        artist: 'Eminem',
-        plays: '10.2M',
-      },
-      {
-        id: 4,
-        title: 'Think U The Shit (Fart)',
-        artist: 'Ice Spice',
-        plays: '615.3K',
-      },
-      {
-        id: 5,
-        title: 'Big Foot',
-        artist: 'Nicki Minaj',
-        plays: '977K',
-      },
-      {
-        id: 6,
-        title: 'Mockingbird',
-        artist: 'Eminem',
-        plays: '4.7M',
-      },
-      {
-        id: 7,
-        title: 'IU - Love wins all (Romanized)',
-        artist: 'Genius Romanizations',
-        plays: '144.6K',
-      },
-      {
-        id: 8,
-        title: 'The Real Slim Shady',
-        artist: 'Eminem',
-        plays: '5.9M',
-      },
-    ];
+    this.tracks$ = this._service.getTracks();
+    this.tracks$.subscribe((tracks) => {
+      this.tracks = tracks;
+      this.tracksDisplayed = this.tracks.slice(0, 10);
+    });
+  }
+
+  filterTracksByGenre(genre_id: number) {
+    console.log(genre_id);
+    if (!genre_id) {
+      this.tracksDisplayed = this.tracks.slice(0, 10);
+      return;
+    }
+    this.tracksDisplayed = this.tracks.filter(
+      (track) => track.genreId == genre_id
+    );
+
+    console.log(this.tracksDisplayed);
+  }
+
+  loadMore() {
+    const startIndex = this.tracksDisplayed.length;
+    const endIndex = startIndex + 10;
+
+    const filteredTracks = this.selectedGenre
+      ? this.tracks.filter((track) => track.genreId == this.selectedGenre.id)
+      : this.tracks;
+
+    if (endIndex <= filteredTracks.length) {
+      this.tracksDisplayed.push(...filteredTracks.slice(startIndex, endIndex));
+      this.loadMoreDisabled = false;
+    } else {
+      this.loadMoreDisabled = true;
+    }
   }
 }

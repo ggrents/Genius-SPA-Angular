@@ -49,6 +49,235 @@
       "date_created": "2024-02-06T09:00:00.000Z"
     }
   ],
+  "genres": [
+    {
+      "id": 1,
+      "name": "Rap"
+    },
+    {
+      "id": 2,
+      "name": "Pop"
+    },
+    {
+      "id": 3,
+      "name": "Rock"
+    },
+    {
+      "id": 4,
+      "name": "R&B"
+    }
+  ],
+  "tracks": [
+    {
+      "id": 1,
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "musicianId": 1,
+      "genreId": 1,
+      "views": 1000000
+    },
+    {
+      "id": 2,
+      "title": "Empire State of Mind",
+      "artist": "Jay-Z",
+      "musicianId": 2,
+      "genreId": 1,
+      "views": 800000
+    },
+    {
+      "id": 3,
+      "title": "HUMBLE.",
+      "artist": "Kendrick Lamar",
+      "musicianId": 3,
+      "genreId": 1,
+      "views": 1200000
+    },
+    {
+      "id": 4,
+      "title": "Hotline Bling",
+      "artist": "Drake",
+      "musicianId": 4,
+      "genreId": 1,
+      "views": 1500000
+    },
+    {
+      "id": 5,
+      "title": "Stronger",
+      "artist": "Kanye West",
+      "musicianId": 5,
+      "genreId": 1,
+      "views": 900000
+    },
+    {
+      "id": 6,
+      "title": "Changes",
+      "artist": "Tupac Shakur",
+      "musicianId": 6,
+      "genreId": 1,
+      "views": 700000
+    },
+    {
+      "id": 7,
+      "title": "Juicy",
+      "artist": "The Notorious B.I.G.",
+      "musicianId": 7,
+      "genreId": 1,
+      "views": 850000
+    },
+    {
+      "id": 8,
+      "title": "N.Y. State of Mind",
+      "artist": "Nas",
+      "musicianId": 8,
+      "genreId": 1,
+      "views": 600000
+    },
+    {
+      "id": 9,
+      "title": "Lollipop",
+      "artist": "Lil Wayne",
+      "musicianId": 9,
+      "genreId": 1,
+      "views": 950000
+    },
+    {
+      "id": 10,
+      "title": "Gin and Juice",
+      "artist": "Snoop Dogg",
+      "musicianId": 10,
+      "genreId": 1,
+      "views": 500000
+    },
+    {
+      "id": 11,
+      "title": "Bodak Yellow",
+      "artist": "Cardi B",
+      "musicianId": 11,
+      "genreId": 1,
+      "views": 1100000
+    },
+    {
+      "id": 12,
+      "title": "Super Bass",
+      "artist": "Nicki Minaj",
+      "musicianId": 12,
+      "genreId": 1,
+      "views": 900000
+    },
+    {
+      "id": 13,
+      "title": "SICKO MODE",
+      "artist": "Travis Scott",
+      "musicianId": 13,
+      "genreId": 1,
+      "views": 1300000
+    },
+    {
+      "id": 14,
+      "title": "Congratulations",
+      "artist": "Post Malone",
+      "musicianId": 14,
+      "genreId": 1,
+      "views": 950000
+    },
+    {
+      "id": 15,
+      "title": "1-800-273-8255",
+      "artist": "Logic",
+      "musicianId": 15,
+      "genreId": 1,
+      "views": 850000
+    },
+    {
+      "id": 16,
+      "title": "Mask Off",
+      "artist": "Future",
+      "musicianId": 16,
+      "genreId": 1,
+      "views": 750000
+    },
+    {
+      "id": 17,
+      "title": "Imagine",
+      "artist": "John Lennon",
+      "musicianId": 17,
+      "genreId": 3,
+      "views": 1200000
+    },
+    {
+      "id": 18,
+      "title": "Yesterday",
+      "artist": "The Beatles",
+      "musicianId": 18,
+      "genreId": 3,
+      "views": 1300000
+    },
+    {
+      "id": 19,
+      "title": "Come Together",
+      "artist": "The Beatles",
+      "musicianId": 18,
+      "genreId": 3,
+      "views": 1100000
+    },
+    {
+      "id": 20,
+      "title": "Let It Be",
+      "artist": "The Beatles",
+      "musicianId": 18,
+      "genreId": 3,
+      "views": 1400000
+    },
+    {
+      "id": 21,
+      "title": "Bohemian Rhapsody",
+      "artist": "Queen",
+      "musicianId": 19,
+      "genreId": 3,
+      "views": 1800000
+    },
+    {
+      "id": 22,
+      "title": "Another One Bites the Dust",
+      "artist": "Queen",
+      "musicianId": 19,
+      "genreId": 3,
+      "views": 1300000
+    },
+    {
+      "id": 23,
+      "title": "Don't Stop Me Now",
+      "artist": "Queen",
+      "musicianId": 19,
+      "genreId": 3,
+      "views": 1600000
+    },
+    {
+      "id": 24,
+      "title": "Under Pressure",
+      "artist": "Queen",
+      "musicianId": 19,
+      "genreId": 3,
+      "views": 1500000
+    },
+    {
+      "id": 25,
+      "title": "Purple Haze",
+      "artist": "Jimi Hendrix",
+      "musicianId": 20,
+      "genreId": 3,
+      "views": 1000000
+    },
+    {
+      "id": 26,
+      "title": "All Along the Watchtower",
+      "artist": "Jimi Hendrix",
+      "musicianId": 20,
+      "genreId": 3,
+      "views": 1200000
+    }
+  ],
+
   "musicians": [
     {
       "id": 1,

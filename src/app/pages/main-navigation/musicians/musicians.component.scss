@@ -2,6 +2,13 @@
   background-color: black;
   border: 1px solid white;
 }
+
+::ng-deep {
+  body {
+    background-color: black;
+  }
+}
+
 .musicians-grid {
   margin: 10px 20px 10px 20px;
   display: grid;
@@ -15,6 +22,7 @@
     color: #5ba7c2;
     display: flex;
     justify-content: space-evenly;
+    gap: 25px;
     border: 1px solid black;
     height: auto;
   }

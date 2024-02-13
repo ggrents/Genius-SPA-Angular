@@ -2,28 +2,33 @@
   <h2>CHARTS</h2>
   <p-dropdown
     class="customSelect"
-    id="huy"
     [ngStyle]="{ color: 'var(--primary-color)' }"
-    [options]="genres"
+    [options]="genres$ | async"
     [(ngModel)]="selectedGenre"
     optionLabel="name"
     [showClear]="false"
     placeholder="Filter by genre"
+    (onChange)="filterTracksByGenre(selectedGenre.id)"
   ></p-dropdown>
 </div>
 
 <div id="tabCharts" class="table-charts">
-  <p-table [value]="tracks" [tableStyle]="{ 'min-width': '50rem' }">
+  <p-table [value]="tracksDisplayed" [tableStyle]="{ 'min-width': '50rem' }">
     <ng-template pTemplate="body" let-track>
       <tr>
-        <td>{{ track.id }}</td>
         <td>{{ track.title }}</td>
         <td>{{ track.artist }}</td>
-        <td>{{ track.plays }}</td>
+        <td>
+          <i class="pi pi-eye" style="margin-right: 12px"> </i>{{ track.views }}
+        </td>
       </tr>
     </ng-template>
   </p-table>
 </div>
 <div class="wrapper-button">
-  <p-button label="LOAD MORE"></p-button>
+  <p-button
+    (click)="loadMore()"
+    [disabled]="loadMoreDisabled"
+    label="LOAD MORE"
+  ></p-button>
 </div>

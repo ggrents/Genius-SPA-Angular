@@ -13,7 +13,11 @@
       <tbody>
         <tr *ngFor="let musician of musicians.slice(0, musicians.length / 3)">
           <td>
-            <a href="#">{{ musician.nickname }}</a>
+            <a
+              [routerLink]="'/musicians'"
+              [queryParams]="{ startLetter: musician.nickname.charAt(0) }"
+              >{{ musician.nickname }}</a
+            >
           </td>
 
           <td>

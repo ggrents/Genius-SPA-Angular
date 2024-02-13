@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ArticleService } from './main/article.service';
 import { MusiciansService } from './musicians/musicians.service';
 import { RouterModule } from '@angular/router';
+import { TrackService } from './charts/service/track.service';
+
 @NgModule({
   declarations: [
     MainComponent,
@@ -39,6 +41,6 @@ import { RouterModule } from '@angular/router';
     HttpClientModule,
     RouterModule,
   ],
-  providers: [ArticleService, MusiciansService],
+  providers: [ArticleService, MusiciansService, TrackService],
 })
 export class MainNavigationModule {}

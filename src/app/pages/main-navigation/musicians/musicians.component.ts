@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MusiciansService } from './musicians.service';
-import { Observable } from 'rxjs';
+import { Observable, filter, map } from 'rxjs';
 import { Musician } from './models/musician';
 import { ActivatedRoute } from '@angular/router';
 
@@ -24,7 +24,13 @@ export class MusiciansComponent implements OnInit {
       if (!this.startLetter) {
         this.musicians$ = this._service.getAllMusicians();
       } else {
-        this.musicians$ = this._service.getAllMusicians().pipe(filter((item)=>));
+        this.musicians$ = this._service.getAllMusicians().pipe(
+          map((musicians) => {
+            return musicians.filter((musician) =>
+              musician.nickname.startsWith(this.startLetter.toUpperCase())
+            );
+          })
+        );
       }
     });
   }
