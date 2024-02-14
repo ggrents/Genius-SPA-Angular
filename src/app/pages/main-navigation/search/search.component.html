@@ -1,8 +1,33 @@
 <div class="search-grid">
-  <div class="grid-item grid-item-1"></div>
-  <div class="grid-item grid-item-2"></div>
-  <div class="grid-item grid-item-3"></div>
-  <!-- <div class="grid-item grid-item-4"></div> -->
+  <!-- Музыканты -->
+  <div class="grid-item grid-item-1">
+    <h2>Musicians</h2>
+    <ul>
+      <li *ngFor="let musician of musicians$ | async">
+        {{ musician.nickname }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Треки -->
+  <div class="grid-item grid-item-2">
+    <h2>Tracks</h2>
+    <ul>
+      <li *ngFor="let track of tracks$ | async">
+        {{ track.title }} by {{ track.artist }}
+      </li>
+    </ul>
+  </div>
+
+  <!-- Еще музыканты -->
+  <div class="grid-item grid-item-3">
+    <h2>More Musicians</h2>
+    <ul>
+      <li *ngFor="let musician of musicians$ | async">
+        {{ musician.nickname }}
+      </li>
+    </ul>
+  </div>
 </div>
 
 <musicians-letters> </musicians-letters>

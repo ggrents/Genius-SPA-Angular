@@ -49,7 +49,7 @@ export class ChartsComponent implements OnInit {
       ? this.tracks.filter((track) => track.genreId == this.selectedGenre.id)
       : this.tracks;
 
-    if (endIndex <= filteredTracks.length) {
+    if (endIndex < filteredTracks.length) {
       this.tracksDisplayed.push(...filteredTracks.slice(startIndex, endIndex));
       this.loadMoreDisabled = false;
     } else {

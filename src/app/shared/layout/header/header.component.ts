@@ -14,6 +14,8 @@ export class HeaderComponent {
   }
 
   navigateToSearchPage() {
-    this.router.navigate(['/search']);
+    this.router.navigate(['/search'], {
+      queryParams: { query: this.searchedArtist },
+    });
   }
 }

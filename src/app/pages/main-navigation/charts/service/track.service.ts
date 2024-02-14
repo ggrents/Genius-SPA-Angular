@@ -20,6 +20,12 @@ export class TrackService {
     return this.http.get<Track>(`${this.apiUrl}/${id}`);
   }
 
+  GetTracksByLetter(startLetter: string) {
+    return this.http.get<Track[]>(
+      `${this.apiUrl}/tracks?title_like=${startLetter}`
+    );
+  }
+
   getGenres(): Observable<Genre[]> {
     return this.http.get<Genre[]>(`${this.apiUrl}/genres`);
   }

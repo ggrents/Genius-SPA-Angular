@@ -19,6 +19,9 @@ import { ArticleService } from './main/article.service';
 import { MusiciansService } from './musicians/musicians.service';
 import { RouterModule } from '@angular/router';
 import { TrackService } from './charts/service/track.service';
+import { MusicianDetailComponent } from './musicians/musician-detail/musician-detail.component';
+import { ArticleDetailComponent } from './main/article-detail/article-detail.component';
+import { TrackDetailComponent } from './charts/track-detail/track-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { TrackService } from './charts/service/track.service';
     MusiciansComponent,
     MusiciansLettersComponent,
     SearchComponent,
+    MusicianDetailComponent,
+    ArticleDetailComponent,
+    TrackDetailComponent,
   ],
   imports: [
     CommonModule,
