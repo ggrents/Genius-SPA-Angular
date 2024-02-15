@@ -29,7 +29,6 @@ export class ChartsComponent implements OnInit {
   }
 
   filterTracksByGenre(genre_id: number) {
-    console.log(genre_id);
     if (!genre_id) {
       this.tracksDisplayed = this.tracks.slice(0, 10);
       return;
@@ -37,8 +36,6 @@ export class ChartsComponent implements OnInit {
     this.tracksDisplayed = this.tracks.filter(
       (track) => track.genreId == genre_id
     );
-
-    console.log(this.tracksDisplayed);
   }
 
   loadMore() {

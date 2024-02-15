@@ -14,7 +14,7 @@ export class NavMenuComponent {
     },
     {
       name: 'FEATURED',
-      link: '/featured',
+      link: '/',
     },
     {
       name: 'CHARTS',
@@ -22,7 +22,7 @@ export class NavMenuComponent {
     },
     {
       name: 'VIDEOS',
-      link: '/videos',
+      link: '/',
     },
   ];
   socialNetworks = [

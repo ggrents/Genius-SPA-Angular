@@ -15,7 +15,6 @@ export class SigninComponent {
   });
 
   onSubmit() {
-    console.log(this.signUpForm.valid ? 'form is valid' : 'form invalid');
     this.signUpForm.reset();
   }
 }

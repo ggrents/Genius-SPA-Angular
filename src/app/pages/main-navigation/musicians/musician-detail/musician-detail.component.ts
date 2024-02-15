@@ -29,7 +29,6 @@ export default class MusicianDetailComponent {
         .getTracksByMusicianId(this.musician_id)
         .subscribe((tracks) => {
           this.tracks = tracks;
-          console.log(tracks);
         });
     });
   }

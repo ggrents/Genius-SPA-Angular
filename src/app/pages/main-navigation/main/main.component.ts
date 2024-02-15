@@ -15,7 +15,6 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
     this.hottest_article$ = this._service.getHottestArticle();
-    this.hottest_article$.subscribe(console.log);
     this.latest_news$ = this._service.getLatestNews();
   }
 }
