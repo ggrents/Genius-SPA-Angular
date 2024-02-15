@@ -1,1 +1,9 @@
-<p>article-detail works!</p>
+<div *ngIf="article$ | async as article" class="wrapper">
+  <div class="article">
+    <div class="article-text">
+      <h3>{{ article.title }}</h3>
+      <img src="assets/{{ article.image_path }}" alt="" />
+      <p>{{ article.content }}</p>
+    </div>
+  </div>
+</div>

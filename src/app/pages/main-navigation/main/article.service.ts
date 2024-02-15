@@ -14,6 +14,10 @@ export class ArticleService {
     return this.http.get<Article>(`${this.apiUrl}/news?_start=0&_limit=1`);
   }
 
+  getArticleById(id: number) {
+    return this.http.get<Article>(`${this.apiUrl}/news/${id}`);
+  }
+
   getLatestNews() {
     return this.http.get<Article[]>(`${this.apiUrl}/news?_start=1&_limit=4`);
   }
