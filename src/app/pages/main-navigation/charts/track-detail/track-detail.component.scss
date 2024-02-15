@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .lyrics {
+    background-color: #dedddd;
+    padding: 2% 0 2% 10%;
+    height: auto;
+    border: 1px solid black;
+    width: 60%;
+    margin: 20px;
+    font-family: Programme, Arial, sans-serif;
+  }
+
+  .heading {
+    font-family: "Rubik", sans-serif;
+    h3 {
+      font-size: 2.5em;
+    }
+
+    h4 {
+      font-size: 1.5em;
+    }
+    width: 100%;
+    text-align: left;
+    padding-left: 49%;
+    background-color: #dedddd;
+    border: 1px solid black;
+  }
+}
+
+p {
+  white-space: pre-line;
+}

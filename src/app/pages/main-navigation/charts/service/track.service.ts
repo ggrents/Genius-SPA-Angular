@@ -17,13 +17,23 @@ export class TrackService {
   }
 
   getTrackById(id: number): Observable<Track> {
-    return this.http.get<Track>(`${this.apiUrl}/${id}`);
+    return this.http.get<Track>(`${this.apiUrl}/tracks/${id}`);
   }
 
   GetTracksByLetter(startLetter: string) {
     return this.http.get<Track[]>(
       `${this.apiUrl}/tracks?title_like=${startLetter}`
     );
+  }
+
+  getTracksByMusicianId(musicianId: number): Observable<Track[]> {
+    return this.http
+      .get<Track[]>(`${this.apiUrl}/tracks`)
+      .pipe(
+        map((tracks) =>
+          tracks.filter((track) => track.musicianId == musicianId)
+        )
+      );
   }
 
   GetTracksByQuery(searchedQuery: string): Observable<Track[]> {

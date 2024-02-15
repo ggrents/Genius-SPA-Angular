@@ -21,6 +21,10 @@ export class MusiciansService {
     );
   }
 
+  getMusicianById(id: number) {
+    return this.http.get<Musician>(`${this.apiUrl}/musicians/${id}`);
+  }
+
   GetMusiciansByQuery(searchedQuery: string): Observable<Musician[]> {
     return this.http.get<Musician[]>(`${this.apiUrl}/musicians`).pipe(
       map((musicians) => {

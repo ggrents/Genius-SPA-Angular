@@ -1,1 +1,9 @@
-<p>track-detail works!</p>
+<div *ngIf="track$ | async as track" class="wrapper">
+  <div class="heading">
+    <h3>{{ track.title }}</h3>
+    <h4>{{ track.artist }}</h4>
+  </div>
+  <div class="lyrics">
+    <p>{{ track.lyrics }}</p>
+  </div>
+</div>

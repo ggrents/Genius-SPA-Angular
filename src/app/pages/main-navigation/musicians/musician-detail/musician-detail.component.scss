@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  h3 {
+    font-size: 4em;
+    text-align: center;
+  }
+}
+
+.table-wrapper {
+  background-color: #f9f9f9;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.table-wrapper th {
+  background-color: #f2f2f2;
+}
+
+.table-wrapper tr:hover {
+  background-color: #f2f2f2;
+}

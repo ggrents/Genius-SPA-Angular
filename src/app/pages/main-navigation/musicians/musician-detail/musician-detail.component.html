@@ -1,1 +1,19 @@
-<p>musician-detail works!</p>
+<div *ngIf="musician$ | async as musician" class="wrapper">
+  <div class="article">
+    <div class="article-text">
+      <h3>{{ musician.nickname }}</h3>
+      <!-- <img src="assets/{{ musician.image_path }}" alt="" /> -->
+      <table class="table-wrapper">
+        <tbody>
+          <ng-container *ngIf="tracks">
+            <tr *ngFor="let track of tracks">
+              <td>
+                <a [routerLink]="['/track', track.id]"> {{ track.title }} </a>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
