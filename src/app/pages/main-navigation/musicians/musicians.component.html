@@ -13,18 +13,20 @@
       <tbody>
         <tr *ngFor="let musician of musicians.slice(0, musicians.length / 3)">
           <td>
-            <a
-              [routerLink]="'/musicians'"
-              [queryParams]="{ startLetter: musician.nickname.charAt(0) }"
-              >{{ musician.nickname }}</a
+            <a [routerLink]="['/musician', musician.id]">
+              {{ musician.nickname }}</a
             >
           </td>
 
           <td>
-            <a href="#">{{ musician.first_name }} </a>
+            <a [routerLink]="['/musician', musician.id]"
+              >{{ musician.first_name }}
+            </a>
           </td>
           <td>
-            <a href="#">{{ musician.last_name }} </a>
+            <a [routerLink]="['/musician', musician.id]"
+              >{{ musician.last_name }}
+            </a>
           </td>
         </tr>
       </tbody>
@@ -49,13 +51,19 @@
           "
         >
           <td>
-            <a href="#"> {{ musician.nickname }} </a>
+            <a [routerLink]="['/musician', musician.id]">
+              {{ musician.nickname }}
+            </a>
           </td>
           <td>
-            <a href="#">{{ musician.first_name }} </a>
+            <a [routerLink]="['/musician', musician.id]"
+              >{{ musician.first_name }}
+            </a>
           </td>
           <td>
-            <a href="#">{{ musician.last_name }} </a>
+            <a [routerLink]="['/musician', musician.id]"
+              >{{ musician.last_name }}
+            </a>
           </td>
         </tr>
       </tbody>
@@ -75,13 +83,19 @@
           *ngFor="let musician of musicians.slice((musicians.length * 2) / 3)"
         >
           <td>
-            <a href="#"> {{ musician.nickname }} </a>
+            <a [routerLink]="['/musician', musician.id]">
+              {{ musician.nickname }}
+            </a>
           </td>
           <td>
-            <a href="#"> {{ musician.first_name }} </a>
+            <a [routerLink]="['/musician', musician.id]">
+              {{ musician.first_name }}
+            </a>
           </td>
           <td>
-            <a href="#"> {{ musician.last_name }} </a>
+            <a [routerLink]="['/musician', musician.id]"
+              >{{ musician.last_name }}
+            </a>
           </td>
         </tr>
       </tbody>

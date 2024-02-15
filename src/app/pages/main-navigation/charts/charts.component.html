@@ -16,7 +16,9 @@
   <p-table [value]="tracksDisplayed" [tableStyle]="{ 'min-width': '50rem' }">
     <ng-template pTemplate="body" let-track>
       <tr>
-        <td>{{ track.title }}</td>
+        <td>
+          <a [routerLink]="['/track', track.id]">{{ track.title }} </a>
+        </td>
         <td>{{ track.artist }}</td>
         <td>
           <i class="pi pi-eye" style="margin-right: 12px"> </i>{{ track.views }}

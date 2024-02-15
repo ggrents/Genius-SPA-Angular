@@ -1,48 +1,56 @@
 {
   "news": [
     {
+      "id": 1,
       "title": "Beyoncé Describes The Struggles Of Touring Life",
       "content": "It is one of two new songs she surprise released during the Super Bowl",
       "image_path": "beyonce.png",
       "date_created": "2024-02-12T12:00:00.000Z"
     },
     {
+      "id": 2,
       "title": "Eminem's 27-year-old daughter is getting married",
       "content": "The daughter of a famous rapper has become quite an adult — on Monday she announced her engagement to her boyfriend! The heiress of the star carefully hides her personal life, but still could not help but share her emotions.",
       "image_path": "eminem.jpg",
       "date_created": "2024-02-12T12:00:00.000Z"
     },
     {
+      "id": 3,
       "title": "Travis Scott slams props at Grammy Awards after losing Best Rap Album",
       "content": "Travis Scott made headlines at the Grammy Awards by throwing props after losing the Best Rap Album category.",
       "image_path": "cactus-jack.jpg",
       "date_created": "2024-02-11T10:30:00.000Z"
     },
     {
+      "id": 4,
       "title": "Playboy rapper Carti has been arrested for assaulting his pregnant girlfriend",
       "content": "The rapper known as Playboy Carti has been arrested for allegedly assaulting his pregnant girlfriend.",
       "image_path": "Playboi-Carti.jpg",
       "date_created": "2024-02-10T15:45:00.000Z"
     },
     {
+      "id": 5,
       "title": "21 Savage released the album 'American Dream'",
       "content": "21 Savage surprises fans with the release of his new album 'American Dream', featuring collaborations with top artists.",
       "image_path": "212121.jpg",
       "date_created": "2024-02-09T08:00:00.000Z"
     },
     {
+      "id": 6,
       "title": "Kanye West announces 'Yeezus Returns' tour dates",
       "content": "Kanye West announces a new tour, 'Yeezus Returns', to the excitement of fans worldwide.",
       "image_path": "kanye-west.jpg",
       "date_created": "2024-02-08T11:20:00.000Z"
     },
     {
+      "id": 7,
       "title": "Rihanna launches new fashion line 'Fenty Couture'",
       "content": "Rihanna takes the fashion world by storm with the launch of her latest clothing line, 'Fenty Couture'.",
       "image_path": "rihanna-fashion.jpg",
       "date_created": "2024-02-07T14:15:00.000Z"
     },
     {
+      "id": 8,
       "title": "Drake announces collaboration album with Lil Wayne",
       "content": "Drake confirms rumors of a collaboration album with Lil Wayne, promising fans a legendary project.",
       "image_path": "drake-lil-wayne.jpg",

@@ -1,7 +1,9 @@
 <div class="wrapper">
   <div *ngIf="hottest_article$ | async as article" class="hottest-article">
     <div class="hottest-article__title">
-      <h2>{{ article[0].title }}</h2>
+      <a [routerLink]="['/article', article[0].id]">
+        <h2>{{ article[0].title }}</h2>
+      </a>
       <p>
         {{ article[0].content }}
       </p>

@@ -29,11 +29,10 @@ export class SearchComponent implements OnInit {
   }
 
   fetchData() {
-    // Получение музыкантов
-    this.musicians$ = this._musicianService.GetMusiciansByLetter(
+    this.musicians$ = this._musicianService.GetMusiciansByQuery(
       this.searchedQuery
     );
-    // Получение треков
-    this.tracks$ = this._trackService.GetTracksByLetter(this.searchedQuery);
+
+    this.tracks$ = this._trackService.GetTracksByQuery(this.searchedQuery);
   }
 }

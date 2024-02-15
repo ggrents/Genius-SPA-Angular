@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../../environments/enviroment';
 import { Musician } from './models/musician';
+import { Observable, map } from 'rxjs';
 
 @Injectable()
 export class MusiciansService {
@@ -17,6 +18,16 @@ export class MusiciansService {
   GetMusiciansByLetter(startLetter: string) {
     return this.http.get<Musician[]>(
       `${this.apiUrl}/musicians?nickname_like=${startLetter}`
+    );
+  }
+
+  GetMusiciansByQuery(searchedQuery: string): Observable<Musician[]> {
+    return this.http.get<Musician[]>(`${this.apiUrl}/musicians`).pipe(
+      map((musicians) => {
+        return musicians.filter((musician) =>
+          musician.nickname.toLowerCase().includes(searchedQuery.toLowerCase())
+        );
+      })
     );
   }
 }
