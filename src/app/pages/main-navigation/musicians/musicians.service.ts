@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../../environments/enviroment';
 import { Musician } from './models/musician';
-import { Observable, map } from 'rxjs';
+import { Observable, map, take } from 'rxjs';
 
 @Injectable()
 export class MusiciansService {
@@ -25,7 +25,9 @@ export class MusiciansService {
     return this.http.get<Musician[]>(`${this.apiUrl}/musicians`).pipe(
       map((musicians) => {
         return musicians.filter((musician) =>
-          musician.nickname.toLowerCase().includes(searchedQuery.toLowerCase())
+          musician.nickname
+            .toLowerCase()
+            .includes(searchedQuery.toLowerCase().slice(0, 50))
         );
       })
     );

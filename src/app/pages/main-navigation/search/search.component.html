@@ -1,11 +1,12 @@
-<h2>"{{ searchedQuery }}"</h2>
-<h3>ALL RESULTS</h3>
-
+<div class="header">
+  <h2>"{{ searchedQuery }}"</h2>
+  <h3>ALL RESULTS</h3>
+</div>
 <div class="search-grid">
   <div class="grid-item grid-item-1">
-    <h2>Musicians</h2>
+    <h2>MUSICIANS</h2>
     <ul>
-      <li *ngFor="let musician of musicians$ | async">
+      <li *ngFor="let musician of musiciansLeftHalf$ | async">
         {{ musician.nickname }}
       </li>
     </ul>
@@ -13,19 +14,30 @@
 
   <!-- Треки -->
   <div class="grid-item grid-item-2">
-    <h2>Tracks</h2>
-    <ul>
-      <li *ngFor="let track of tracks$ | async">
-        {{ track.title }} by {{ track.artist }}
-      </li>
-    </ul>
+    <h2>TRACKS</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Artist</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="tracks$ | async as tracks">
+          <tr *ngFor="let track of tracks">
+            <td>{{ track.title }}</td>
+            <td>{{ track.artist }}</td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
   </div>
 
   <!-- Еще музыканты -->
   <div class="grid-item grid-item-3">
-    <h2>More Musicians</h2>
+    <h2>MUSICIANS</h2>
     <ul>
-      <li *ngFor="let musician of musicians$ | async">
+      <li *ngFor="let musician of musiciansRightHalf$ | async">
         {{ musician.nickname }}
       </li>
     </ul>

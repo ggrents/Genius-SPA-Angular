@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, map } from 'rxjs';
+import { Observable, map, take } from 'rxjs';
 import { Track } from '../models/track';
 import { Genre } from '../models/genre';
 import { environment } from '../../../../../environments/enviroment';
@@ -29,10 +29,13 @@ export class TrackService {
   GetTracksByQuery(searchedQuery: string): Observable<Track[]> {
     return this.http.get<Track[]>(`${this.apiUrl}/tracks`).pipe(
       map((tracks) => {
-        return tracks.filter((track) =>
-          track.title.toLowerCase().includes(searchedQuery.toLowerCase())
-        );
-      })
+        return tracks
+          .filter((track) =>
+            track.title.toLowerCase().includes(searchedQuery.toLowerCase())
+          )
+          .slice(0, 8);
+      }),
+      take(8)
     );
   }
 
